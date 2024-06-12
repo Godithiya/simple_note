@@ -41,11 +41,11 @@ function NoteCard(id, content, date){
   // kita buat elemen div
   let div = document.createElement("div");
   div.setAttribute("id", id)
-  div.setAttribute("class", "w-full min-h-[120px] p-2 mt-4 flex flex-col bg-white shadow-md rounded-md relative")
+  div.setAttribute("class", "w-full min-h-[120px] p-2 mt-4 flex flex-col bg-black shadow-md rounded-md relative")
 
   // buat element p
   let p = document.createElement("p");
-  p.setAttribute("class", "font-light")
+  p.setAttribute("class", "font-light text-white")
   p.textContent = content;
 
   //buat element small
@@ -60,7 +60,6 @@ function NoteCard(id, content, date){
   buttonClose.addEventListener("click", ( )=>{deleteCard(id)});
 
   // kita masukan element p, small, dan button ke dalam element div
-
   div.appendChild(p);
   div.appendChild(small);
   div.appendChild(buttonClose);
